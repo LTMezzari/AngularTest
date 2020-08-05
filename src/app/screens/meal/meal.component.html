@@ -1,0 +1,25 @@
+<form class="root" (ngSubmit)="onSubmit()">
+  <div>
+    <select ng-model="selectedInstitution" (change)="changeInstitution($event.target.value)">
+      <option *ngFor="let institution of institutions" value={{institution.id}}>
+        {{institution.name}}
+      </option>
+    </select>
+  </div>
+  <div>
+    <input name="mealDescription" type="text" placeholder="Digite a descrição" [(ngModel)]="meal.description" />
+  </div>
+  <div>
+    <input name="mealDate" type="date" placeholder="Digite a data da refeição" [(ngModel)]="meal.date" />
+  </div>
+  <div>
+    <input name="mealDate" type="file" accept="image/*" (change)="changeListener($event)"
+      placeholder="Digite a data da refeição" [(ngModel)]="meal.date" />
+  </div>
+  <div>
+    <img class="image" width="250px" height="250px" src="{{image}}">
+  </div>
+  <div>
+    <button type="submit">Salvar</button>
+  </div>
+</form>

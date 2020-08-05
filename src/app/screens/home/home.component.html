@@ -1,0 +1,22 @@
+<div class="root">
+  <div class="containers">
+    <button (click)="navigate('institution')" class="option">
+      <img class="icons" width="70" src="../../../assets/institution_icon.png">
+      <h2>Adicionar Instituição</h2>
+    </button>
+    <button [disabled]="!hasInstitutions" (click)="navigate('person')" class="option">
+      <img class="icons" width="70" src="../../../assets/user_icon.png">
+      <h2>Adicionar Usuário</h2>
+    </button>
+  </div>
+  <div class="containers">
+    <button [disabled]="!hasInstitutions" (click)="navigate('meal')" class="option">
+      <img class="icons" width="70" src="../../../assets/meal_icon.png">
+      <h2>Adicionar Refeiçâo</h2>
+    </button>
+    <button [disabled]="!hasInstitutions || !hasMeals" (click)="navigate('meal-list')" class="option">
+      <img class="icons" width="70" src="../../../assets/menu.png">
+      <h2>Ver Refeições</h2>
+    </button>
+  </div>
+</div>

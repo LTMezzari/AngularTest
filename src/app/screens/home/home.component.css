@@ -1,0 +1,27 @@
+.root {
+    height: 100vh;
+    background-image: url("../../../assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -8.5px;
+    padding-top: 5vh;
+    padding-left: 15vh;
+    opacity: 0.5;
+}
+
+.containers {
+    margin-left: 50vh;
+}
+
+.option {
+    width: 30vh;
+    height: 30vh;
+    opacity: 0.8;
+    background-color: coral;
+    margin: 5vh;
+}
+
+.icons {
+    padding: 15px;
+}

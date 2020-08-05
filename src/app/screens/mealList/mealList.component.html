@@ -1,0 +1,14 @@
+<table class="root">
+    <tr>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Image</th>
+    </tr>
+    <tr *ngFor="let mealRequest of meals">
+        <td>{{mealRequest.meal.description}}</td>
+        <td>{{mealRequest.meal.date}}</td>
+        <td>
+            <img width="200px" src="data:image/png;base64,{{mealRequest.imageBase64}}">
+        </td>
+    </tr>
+</table>

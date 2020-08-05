@@ -1,0 +1,27 @@
+.root {
+    height: 100vh;
+    background-image: url("../../../assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -8.5px;
+    padding-top: 10vh;
+    padding-left: 65vh;
+    opacity: 0.5;
+}
+
+div {
+    width: 70vh;
+}
+
+input {
+    width: 100%;
+}
+
+select, button {
+    width: 72.5vh;
+}
+
+.image {
+    background-color: white
+}
